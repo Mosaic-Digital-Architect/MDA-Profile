@@ -240,10 +240,6 @@ color: #00008A;
 margin: 15px;
 }
 
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 #hero {
 width: 100%;
 height: 70vh;
@@ -345,4 +341,75 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 100% {
     transform: translateY(-10px);
 }
+}
+
+.about {
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+  }
+  
+  .section-title h2::before,
+  .section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+    display: inline-block;
+  }
+  
+  .section-title h2::before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-title h2::after {
+    margin: 0 0 10px 15px;
+  }
+  
+  .section-title p {
+    margin: 15px 0 0 0;
+  }
+
+.border-blue {
+    padding: 21px 14px;
+    border-radius: 16px;
+    border: 2px solid #0001E8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 150px;
+    color: #555;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.border-orange {
+    padding: 21px 14px;
+    border-radius: 16px;
+    border: 2px solid #B7141D;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 150px;
+    color: #555;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.services {
+    height: 600px;
+}
+
+.service-bg {
+    background: url('../images/background/service-bg.png'), lightgray 50% / f no-repeat;
 }

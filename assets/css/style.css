@@ -407,9 +407,106 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .services {
-    height: 600px;
+    height: 800px;
 }
 
 .service-bg {
-    background: url('../images/background/service-bg.png'), lightgray 50% / f no-repeat;
+    background: url('../images/background/service-bg.png'), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.service-title {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-contact-service {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #00008A;
+    border: 2px solid #00008A;
+}
+    
+.btn-contact-service:hover {
+    background: #00008A;
+    color: #fff;
+}
+
+.card-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card {
+    padding: 22px 40px;
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #1E3163;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    background-color: #EEE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img{
+    width: 80px;
+}
+
+.service-card-title {
+    margin-top: 16px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.service-card-content {
+    margin-top: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.portfolio {
+    padding-top: 24px;
+}
+.portfolio-bg {
+    background: rgba(211, 211, 235, 0.31);
 }

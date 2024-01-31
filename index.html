@@ -51,20 +51,16 @@
             bersama Mosaic 
             Digital Architect
           </h1>
-          <p class="fs-5 mt-4" data-aos="zoom-in-up" data-aos-delay="800">
-            <b>Mosaic Digital Architect (MDA)</b> merupakan perusahaan startup yang
-            bergerak dibidang digital marketing. Kami adalah spesialis dalam
-            pembuatan desain web yang memukau dan pembuatan website yang
-            tidak hanya menarik secara visual, tetapi juga fungsional, meliputi
-            website statis dan dinamis.
+          <p class="fs-5 mt-4 sub-hero" data-aos="zoom-in-up" data-aos-delay="800">
+            
           </p>
-          <div class="mt-4" data-aos="fade-up" data-aos-delay="1200">
+          <div class="mt-4" data-aos="fade-up" data-aos-delay="1000">
             <a href="#about" class="btn-get-started scrollto">Lihat Penawaran</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" 
         data-aos="zoom-out"
-        data-aos-delay="1600">
+        data-aos-delay="1200">
           <img src="assets/images/logo/main-hero.png" class="img-fluid animated" alt="">
         </div>
       </div>
@@ -80,12 +76,12 @@
       </div>
 
       <div class="row content">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300"  data-aos-anchor-placement="bottom-bottom">
           <p class="border-blue">
             <b>Mosaic Digital Architect (MDA)</b> merupakan perusahaan startup yang didirikan pada tahun 2024 dan bergerak dibidang digital marketing. Kami adalah spesialis dalam pembuatan desain web yang memukau dan pembuatan website yang tidak hanya menarik secara visual, tetapi juga fungsional, meliputi website statis dan dinamis.
           </p>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="600"  data-aos-anchor-placement="bottom-bottom">
           <p class="border-orange">
             <b>Mosaic Digital Architect (MDA)</b> percaya bahwa kreativitas dan teknologi yang kami miliki adalah kunci untuk mengubah ide menjadi realitas. Kami berdedikasi untuk membantu klien demi mencapai kesuksesan secara digital melalui solusi yang kami tawarkan. Dengan tim yang terdiri dari para ahli yang berpengalaman di bidangnya, kami siap mewujudkan visi digital para pembisnis UMKM atau Korporasi.
           </p>
@@ -100,12 +96,12 @@
       <div class="service-title-container">
         <h2 class="service-title" data-aos="fade-down" data-aos-delay="300">Services</h2>
         <div>
-          <a href="#about" class="btn-contact-service scrollto" data-aos="fade-down" data-aos-delay="600">Hubungi Kami</a>
+          <a href="#about" class="btn-contact-service scrollto" data-aos="fade-up" data-aos-delay="600">Hubungi Kami</a>
         </div>
       </div>
 
       <div class="card-container">
-        <div class="service-card" data-aos="zoom-in-down" data-aos-delay="800">
+        <div class="service-card" data-aos="zoom-in-down" data-aos-delay="500" >
           <div class="card-image-container">
             <div class="card-image"> 
               <img src="assets/images/cards/graph.png" alt="">
@@ -114,7 +110,7 @@
           <div class="service-card-title">Profile Business Web</div>
           <div class="service-card-content">Kembangkan sistem promosi anda berbasis web sesuai kebutuhan untuk meningkatkan keter-jangkauan pasar, memperkuat brand, dan membangun koneksi dengan audiens di era digital.</div>
         </div>
-        <div class="service-card mt-5 mt-md-0 mt-lg-0" data-aos="zoom-in-down" data-aos-delay="1100">
+        <div class="service-card mt-5 mt-md-0 mt-lg-0" data-aos="zoom-in-down" data-aos-delay="800" >
           <div class="card-image-container">
             <div class="card-image"> 
               <img src="assets/images/cards/app-development.png" alt="">
@@ -123,7 +119,7 @@
           <div class="service-card-title">SIM Web Application</div>
           <div class="service-card-content">Sistem informasi, administrasi, dan promosi berbasis website untuk meningkatkan profitabilitas dan efisiensi operasional bisnis Anda.</div>
         </div>
-        <div class="service-card mt-5 mt-md-5 mt-lg-0" data-aos="zoom-in-down" data-aos-delay="1400">
+        <div class="service-card mt-5 mt-md-5 mt-lg-0" data-aos="zoom-in-down" data-aos-delay="1000" >
           <div class="card-image-container">
             <div class="card-image"> 
               <img src="assets/images/cards/ads.png" alt="">
@@ -182,14 +178,28 @@
 
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="scripts/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
   <script>
     // $('.carousel').carousel({
     //   interval: 2000 // Changes the speed
     // })
 
-    AOS.init();
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.sub-hero', {
+      duration: 5, delay: 0.8, 
+      text: `<b>Mosaic Digital Architect (MDA)</b> merupakan perusahaan startup yang
+            bergerak dibidang digital marketing. Kami adalah spesialis dalam
+            pembuatan desain web yang memukau dan pembuatan website yang
+            tidak hanya menarik secara visual, tetapi juga fungsional, meliputi
+            website statis dan dinamis.`
+    })
+    gsap.from("#header", { opacity: 0, y: -100, duration: 0.8, ease: "power1", });
+    AOS.init({
+      duration: 800,
+    });
   </script>
 </body>
 </html>

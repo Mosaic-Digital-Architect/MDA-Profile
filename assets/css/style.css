@@ -383,31 +383,31 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
 
 .border-blue {
-    padding: 21px 14px;
+    padding: 30px 25px;
     border-radius: 16px;
     border: 2px solid #0001E8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 150px;
+    min-height: 210px;
     color: #555;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
-    line-height: normal;
+    line-height: 24px;
 }
 
 .border-orange {
-    padding: 21px 14px;
+    padding: 30px 25px;
     border-radius: 16px;
     border: 2px solid #B7141D;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 150px;
+    min-height: 210px;
     color: #555;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
-    line-height: normal;
+    line-height: 24px;
 }
 
 .services {
-    height: 800px;
+    min-height: 800px;
 }
 
 .service-bg {
@@ -453,6 +453,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 .card-container {
     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -498,7 +499,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
     margin-top: 8px;
     color: #FFF;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -561,10 +562,9 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .pricing-card {
-    width: 250px;
+    max-width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    /* margin: 20px; */
     border-radius: 30px;
     border: 2px solid #00008A;
   }

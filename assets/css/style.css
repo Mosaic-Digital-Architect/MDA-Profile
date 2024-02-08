@@ -769,7 +769,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
     border-color: #3498db;
   }
   
-  .contact .php-email-form button[type=submit] {
+  .contact .php-email-form button {
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -783,7 +783,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
         background-color: white;
   }
   
-  .contact .php-email-form button[type=submit]:hover {
+  .contact .php-email-form button:hover {
     background: #00008A;
     color: #fff;
   }

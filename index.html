@@ -541,15 +541,15 @@
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-6 px-5" data-aos="fade-up" data-aos-delay="300">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form class="php-email-form" id="contact-form">
             <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="from_name" class="form-control" id="name" placeholder="Your Name" required autocomplete="off">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="from_email" id="email" placeholder="Your Email" required autocomplete="off">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="email_subject" id="subject" placeholder="Subject" required autocomplete="off">
             </div>
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -559,7 +559,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit" class="btn-send-email">Send Message</button></div>
           </form>
         </div>
       </div>
@@ -573,7 +573,7 @@
         </div>
         <div class="footer-contact-links d-flex flex-column">
           <div class="d-flex justify-content-evenly mb-2">
-            <a class="cursor-pointer text-decoration-none" href="https://wa.me/6285711603946?text=Halo!" target="_blank">
+            <a class="cursor-pointer text-decoration-none" href="https://wa.me/6285711603946?text=Halo!, Saya ingin bermitra dengan Mosaic" target="_blank">
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.7625 4.18965C18.6609 2.08809 15.7578 0.788086 12.5508 0.788086C6.1375 0.788086 0.9375 5.9873 0.9375 12.4014C0.9375 14.5357 1.51328 16.535 2.51719 18.2537L2.4875 18.199L0.839844 24.2162L6.99531 22.6014C8.59766 23.4912 10.5094 24.0146 12.5437 24.0146H12.5484C18.9617 24.0123 24.1594 18.8123 24.1594 12.399C24.1594 9.19355 22.8609 6.29199 20.7617 4.19043L20.7625 4.18965ZM12.5484 22.0529H12.5445C10.7328 22.0529 9.03672 21.5529 7.58906 20.6834L7.63281 20.7076L7.28047 20.499L3.62812 21.4576L4.60234 17.8959L4.37266 17.5311C3.44688 16.0764 2.89687 14.3037 2.89687 12.4021C2.89687 7.07246 7.21797 2.75137 12.5477 2.75137C17.8773 2.75137 22.1984 7.07246 22.1984 12.4021C22.1984 17.7318 17.8789 22.0529 12.5484 22.0529ZM17.8422 14.8256C17.5523 14.6803 16.1258 13.9795 15.8602 13.8818C15.5938 13.785 15.4 13.7373 15.2063 14.0279C15.0141 14.3178 14.4578 14.9709 14.2883 15.1646C14.1195 15.3592 13.9492 15.3826 13.6594 15.2381C12.7609 14.874 11.9891 14.3889 11.318 13.7912L11.3258 13.7982C10.7016 13.2201 10.1664 12.5584 9.73438 11.8287L9.7125 11.7881C9.54375 11.4982 9.69453 11.3412 9.83906 11.1967C9.96953 11.067 10.1297 10.8576 10.2742 10.6889C10.3883 10.549 10.4859 10.3889 10.5602 10.217L10.5648 10.2037C10.5984 10.1357 10.618 10.0568 10.618 9.97246C10.618 9.87012 10.5891 9.77481 10.5391 9.69355L10.5406 9.6959C10.4672 9.55059 9.8875 8.12246 9.64609 7.54121C9.41016 6.97559 9.17031 7.05293 8.99297 7.04355C8.82422 7.03574 8.63047 7.03418 8.43672 7.03418C8.12813 7.04199 7.85391 7.18105 7.66484 7.3959L7.66406 7.39746C7.0375 7.99199 6.64844 8.83027 6.64844 9.75918C6.64844 9.77949 6.64844 9.80059 6.64922 9.8209V9.81777C6.75156 10.9639 7.18125 11.9928 7.84219 12.8311L7.83281 12.8193C9.08594 14.6779 10.7563 16.1646 12.7164 17.1662L12.7898 17.1998C13.218 17.3936 13.7664 17.6006 14.3273 17.7779L14.4438 17.81C14.7891 17.9193 15.1867 17.9826 15.5992 17.9826C15.8359 17.9826 16.0688 17.9615 16.2937 17.9217L16.2695 17.9248C17.1047 17.7506 17.7977 17.2467 18.2203 16.5584L18.2273 16.5451C18.3562 16.2592 18.4312 15.9256 18.4312 15.5748C18.4312 15.4303 18.4187 15.2889 18.3945 15.1514L18.3969 15.1662C18.325 15.0451 18.1313 14.9732 17.8406 14.8271L17.8422 14.8256Z" fill="white"/>
               </svg>
@@ -606,6 +606,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -670,6 +671,20 @@
       duration: 800,
       once: true,
     })
+
+    emailjs.init('lRdTApIlvHlab6_lM');
+
+    $('#contact-form').on('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_nazpt4m', 'template_gzgqzh8', this)
+        .then(function(response) {
+          alert('Pesan berhasil terkirim!');
+          $('input[name=from_name], input[name=from_email], input[name=email_subject], textarea[name=message]').val('');
+        }, function(error) {
+          alert('Gagal mengirim pesan: ' + JSON.stringify(error));
+        });
+    });
   </script>
 </body>
 </html>

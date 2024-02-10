@@ -1,6 +1,7 @@
 body {
 font-family: "Open Sans", sans-serif;
 color: #444444;
+overflow-x: hidden;
 }
 
 a {
@@ -635,16 +636,16 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
     margin: 0 18px;
   }
 
-.waves {
+/* .waves {
     margin-bottom: -14rem;
-}
+} */
 
 .contact {
     margin-bottom: 80px;
 }
 
 .contact-title h2{
-    color: white;
+    color: rgb(17, 35, 90);
 }
 
 .contact .contact-about h3 {
@@ -768,7 +769,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
     border-color: #3498db;
   }
   
-  .contact .php-email-form button[type=submit] {
+  .contact .php-email-form button {
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -782,7 +783,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
         background-color: white;
   }
   
-  .contact .php-email-form button[type=submit]:hover {
+  .contact .php-email-form button:hover {
     background: #00008A;
     color: #fff;
   }
@@ -829,3 +830,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
     font-weight: 400;
     line-height: 13px;
   }
+
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -558,7 +558,7 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 .pricing {
     margin-top: 4rem;
     background-color: #FFF;
-    margin-bottom: -12rem;
+    margin-bottom: 0;
 }
 
 .pricing-card {

@@ -1,0 +1,304 @@
+/* https://github.com/Waggish-Mepo/ITechno-Cup/deployments/github-pages */
+
+#business-background-circle {
+    animation: pop 3s infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    10% { transform: scale(0); }
+    13% { transform: scale(1.1); }
+    15% { transform: scale(1); }
+    40% { transform: scale(1); }
+    45% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    55% {transform: scale(1.1);}
+    60% {transform: scale(1);}
+    95% { transform: scale(1); }
+    100% { transform: scale(0.5); }
+}
+
+#business-top-bar {
+    animation: moveRightLeftBusiness 5s infinite ease-in-out 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveRightLeftBusiness {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(45px);
+    }
+  }
+
+  
+#business-colored-bar {
+    animation: moveLeftRightBusiness 4s infinite ease-in-out 1.5s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes moveLeftRightBusiness {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-60px);
+    }
+  }
+
+#business-male-person-right-hand {
+    animation: businessMalePersonRightHand 4s infinite ease-out 2.5s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessMalePersonRightHand{
+    0%{
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+    25%{
+        transform: translate(0, 0) rotateZ(-10deg);
+    }
+    50%{
+        transform: translate(0, 0) rotateZ(10deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+}
+
+#business-male-person-left-hand {
+    animation: businessMalePersonLeftHand 3s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessMalePersonLeftHand{
+    0%{
+        transform: translate(0, 0) rotateZ(1deg);
+    }
+    50%{
+        transform: translate(10px, -3px) rotateZ(-5deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(1deg);
+    }
+}
+
+#business-male-person-head {
+    animation: businessMalePersonHead 4s infinite ease-in 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessMalePersonHead{
+    0%{
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+    25%{
+        transform: translate(0, 0) rotateZ(-5deg);
+    }
+    50%{
+        transform: translate(0, 0) rotateZ(8deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+}
+
+#business-female-person-left-hand {
+    animation: businessfemalePersonLeftHand 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessfemalePersonLeftHand{
+    0%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+    50%{
+        transform: translate(20px, -20px) rotateZ(60deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+}
+
+#business-female-person-right-hand {
+    animation: businessfemalePersonRightHand 4s infinite linear 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessfemalePersonRightHand{
+    0%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+    50%{
+        transform: translate(-20px, 0px) rotateZ(10deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+}
+
+#business-female-person-head {
+    animation: businessfemalePersonHead 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessfemalePersonHead{
+    0%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+    50%{
+        transform: translate(0px, 0px) rotateZ(10deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+}
+
+#business-female-person-side-hair {
+    animation: businessfemaleSideHair 5s infinite linear 0.5s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessfemaleSideHair{
+    0%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+    45%{
+        transform: translate(15px, 0px) rotateZ(-15deg);
+    }
+    50%{
+        transform: translate(15px, 0px) rotateZ(-12deg);
+    }
+    55%{
+        transform: translate(15px, 0px) rotateZ(-15deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+}
+
+
+#umkm-cart {
+    animation: umkmCart 5s infinite ease-out 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes umkmCart {
+    0% { transform: scale(0); opacity: 1;}
+    4% { transform: scale(0.9); }
+    8% { 
+        transform: translateX(-3px) scale(1.05); 
+    }
+    10% { transform: scale(1) translateX(0px); }
+    40% { transform: scale(1) translateX(0px) ; }
+    80% { transform: scale(1) translateX(300px) ; opacity: 1; }
+    95% { transform: scale(1) translateX(300px); opacity: 0;}
+    100% { transform: scale(0) translateX(300px); opacity: 0; }
+}
+
+#umkm-person-head {
+    animation: umkmHead 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes umkmHead{
+    0%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+    50%{
+        transform: translate(-5px, 0px) rotateZ(-10deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(0);
+    }
+}
+
+#umkm-paper {
+    animation: umkmPaper 5s infinite ease-out 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes umkmPaper {
+    0% { transform: scale(0); opacity: 1;}
+    4% { transform: scale(0.9); }
+    8% { 
+        transform: translateX(-3px) scale(1.05); 
+    }
+    10% { transform: scale(1) translateX(0px); }
+    40% { transform: scale(1) translateX(0px) ; }
+    80% { transform: scale(1); }
+    95% { transform: scale(1); opacity: 1;}
+    100% { transform: scale(0); opacity: 0; }
+}
+
+
+#ate-blue-dot {
+    animation: dotpop 5s infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#chat-blue-dot {
+    animation: dotpop 5s infinite ease-in-out 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#line-chart-blue-dot {
+    animation: dotpop 5s infinite ease-in-out 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#message-blue-dot {
+    animation: dotpop 5s infinite ease-in-out 3s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes dotpop {
+    0% { transform: scale(1); }
+    13% { transform: scale(1.3); }
+    15% { transform: scale(1); }
+    40% { transform: scale(1); }
+    45% {transform: scale(1.3);}
+    50% {transform: scale(1);}
+    55% {transform: scale(1.3);}
+    100% { transform: scale(1); }
+}
+
+
+#marketing-person-head {
+    animation: businessfemalePersonHead 10s infinite linear 3s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes businessfemalePersonHead{
+    0%{
+        transform: translate(0, 0) rotateZ(30deg);
+    }
+    50%{
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+    100%{
+        transform: translate(0, 0) rotateZ(30deg);
+    }
+}

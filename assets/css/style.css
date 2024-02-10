@@ -834,3 +834,9 @@ animation: up-down 2s ease-in-out infinite alternate-reverse both;
 .cursor-pointer {
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .pricing-benefit.space {
+    margin-left: 10px;
+  }
+}
